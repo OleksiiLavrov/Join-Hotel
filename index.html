@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="./img/joinup-icon.png" type="image/x-icon">
+   <!--<link rel="stylesheet" href="css/style.css">-->
+   <title>Тур на отдых в отеле Columbus Apart-Hotel Apts</title>
+</head>
+
+<body id="page">
+
+   <div class="container">
+      <header class="header">
+   <a href="https://joinup.ua/" class="header__logo"><img src="./img/joinup-logo.png" alt="Logo"></a>
+   <div class="header__location">
+      <span class="header__location__default">Киев</span>
+      <!--Стрелка вниз-->
+      <i class="fas fa-angle-down"></i>
+      <!--Droplist-->
+      <ul class="header__location__droplist">
+         <li class="location__droplist__item"><a href="#">Минск</a></li>
+         <li class="location__droplist__item"><a href="#">Харьков</a></li>
+         <li class="location__droplist__item"><a href="#">Днепр</a></li>
+         <li class="location__droplist__item"><a href="#">Одесса</a></li>
+         <li class="location__droplist__item"><a href="#">Львов</a></li>
+         <li class="location__droplist__item"><a href="#">Гомель</a></li>
+         <li class="location__droplist__item"><a href="#">Киев</a></li>
+         <li class="location__droplist__item"><a href="#">Кишинёв</a></li>
+      </ul>
+   </div>
+   <div class="header__contact">
+      <a href="tel:+38(044)3039999" class="header__contact__tel">+38 (044) 303-99-99</a>
+      <a href="mailto:office@joinup.ua" class="header__contact__email">office@joinup.ua</a>
+   </div>
+   <div class="header__exchange-rate">
+      <span class="header__exchange-rate__euro">EUR 29.75</span>
+      <span class="header__exchange-rate__dol">USD 27.75</span>
+   </div>
+   <a href="https://joinup.ua/login/" class="header__log-in">Войти как агент</a>
+   <a href="#" class="header__burger">
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+   </a>
+</header>
+      <nav class="nav">
+   <!--Main menu-->
+   <ul class="nav__menu">
+      <li class="nav__menu__item"><a href="https://joinup.ua/poisk-tura-full/" target="_blank">Поиск тура</a></li>
+      <li class="nav__menu__item">
+         <span class="nav-btn">Страны<i class="fas fa-angle-down"></i></span>
+         <div class="sub-menu-container big">
+            <!--Sub-menu while hovering-->
+            <ul class="sub-menu big">
+               <!--Column containing 10 countries-->
+               <li class="sub-menu__column">
+                  <!--The list of 10 countries-->
+                  <ul class="sub-menu__column__list">
+                     <!--Country of column with img and name-->
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-austria.jpg" alt="Flag of Austria">
+                        <a href="#">Австрия</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-albania.png" alt="Flag of Albania">
+                        <a href="#">Албания</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-andorra.png" alt="Flag of Andorra">
+                        <a href="#">Андорра</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-armenia.gif" alt="Flag of Armenia">
+                        <a href="#">Армения</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-bulgaria.png" alt="Flag of Bulgaria">
+                        <a href="#">Болгария</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-hungary.png" alt="Flag of Hungary">
+                        <a href="#">Венгрия</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-vietnam.png" alt="Flag of Vietnam">
+                        <a href="#">Вьетнам</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-greece.png" alt="Flag of Greece">
+                        <a href="#">Греция</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-georgia.jpg" alt="Flag of Georgia">
+                        <a href="#">Грузия</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-dominikana.jpg" alt="Flag of Dominikana">
+                        <a href="#">Доминикана</a>
+                     </li>
+                  </ul>
+               </li>
+               <!--Column containing 10 countries-->
+               <li class="sub-menu__column">
+                  <!--The list of 10 countries-->
+                  <ul class="sub-menu__column__list">
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-egypt.png" alt="Flag of Egypt">
+                        <a href="#">Египет</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-israel.png" alt="Flag of Israel">
+                        <a href="#">Израиль</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-india.png" alt="Flag of India">
+                        <a href="#">Индия</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-indonesie.png" alt="Flag of Indonesie">
+                        <a href="#">Индонезия</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-spain.png" alt="Flag of Spain">
+                        <a href="#">Испания</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-Italiya.jpg" alt="Flag of Italy">
+                        <a href="#">Италия</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-qatar.png" alt="Flag of Qatar">
+                        <a href="#">Катар</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-cyprus.png" alt="Flag of Cyprus">
+                        <a href="#">Кипр</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-china.jpg" alt="Flag of China">
+                        <a href="#">Китай</a>
+                     </li>
+                     <li class="column__list__item">
+                        <img class="list__item__flag" src="./img/flag-cuba.png" alt="Flag of Cuba">
+                        <a href="#">Куба</a>
+                     </li>
+                  </ul>
+               </li>
+               <!--Column containing 10 countries-->
+               <li class="sub-menu__column">
+                  <!--The list of 10 countries-->
+                  <ul class="sub-menu__column__list">
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-mavrikij.jpg"
+                           alt="Flag of Mavrikij"><a href="#">Маврикий</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-malajziya.jpg"
+                           alt="Flag of Malajziya"><a href="#">Малайзия</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-maldives.png"
+                           alt="Flag of Maldives"><a href="#">Мальдивы</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-mexico.png"
+                           alt="Flag of Mexico"><a href="#">Мексика</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-uae.jpg"
+                           alt="Flag of UAE"><a href="#">ОАЭ</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-portugal.png"
+                           alt="Flag of Portugal"><a href="#">Португалия</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-sejshely.jpg"
+                           alt="Flag of Sejshely"><a href="#">Сейшейлы</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-singapour.png"
+                           alt="Flag of Singapour"><a href="#">Сингапур</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-slovakia.png"
+                           alt="Flag of Slovakia"><a href="#">Словакия</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-thailande.png"
+                           alt="Flag of Thailande"><a href="#">Таиланд</a></li>
+                  </ul>
+               </li>
+               <!--Column containing 10 countries-->
+               <li class="sub-menu__column">
+                  <!--The list of 10 countries-->
+                  <ul class="sub-menu__column__list">
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-tanzaniya.jpg"
+                           alt="Flag of Tanzaniya"><a href="#">Танзания</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-tunisia.png"
+                           alt="Flag of Tunisia"><a href="#">Тунис</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-turkey.jpg"
+                           alt="Flag of Turkey"><a href="#">Турция</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-ukraine.jpg"
+                           alt="Flag of Ukraine"><a href="#">Украина</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-finland.jpg"
+                           alt="Flag of Finland"><a href="#">Финляндия</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-france.png"
+                           alt="Flag of France"><a href="#">Франция</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-croatie.png"
+                           alt="Flag of Croatie"><a href="#">Хорватия</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-chernogoriya.jpg"
+                           alt="Flag of Chernogoriya"><a href="#">Черногория</a></li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-czech-republic.png"
+                           alt="Flag of Czech-republic"><a href="#">Чехия</a>
+                     </li>
+                     <li class="column__list__item"><img class="list__item__flag" src="./img/flag-sri-lanka.png"
+                           alt="Flag of Sri-lanka"><a href="#">Шри Ланка</a></li>
+                  </ul>
+               </li>
+
+            </ul>
+         </div>
+      </li>
+      <li class="nav__menu__item"><a href="https://joinup.ua/hotel/" target="_blank">Отели</a></li>
+      <li class="nav__menu__item"><a href="https://joinup.ua/faq/" target="_blank">Справочник</a></li>
+      <li class="nav__menu__item">
+         <span class="nav-btn">Пресс-центр<i class="fas fa-angle-down"></i></span>
+         <div class="sub-menu-container small">
+            <ul class="sub-menu small">
+               <li class="sub-menu__item"><a href="https://joinup.ua/tax_press/novosti/">Новости</a></li>
+               <li class="sub-menu__item"><a href="https://joinup.ua/tax_press/events/">Важно</a></li>
+               <li class="sub-menu__item"><a href="https://joinup.ua/tax_press/koronavirus/">Коронавирус</a></li>
+               <li class="sub-menu__item"><a href="https://joinup.ua/o-nas-pishut/">О нас пишут</a></li>
+            </ul>
+         </div>
+
+
+      </li>
+      <li class="nav__menu__item"><a href="https://franchise.joinup.travel/" target="_blank">Франчайзинг</a></li>
+      <li class="nav__menu__item"><a href="https://joinup.ua/contacts/" target="_blank">Контакты</a></li>
+   </ul>
+</nav>
+      <section class="background">
+   <div class="background-blur">
+      <h1 class="background__title">Columbus Apart Hotel</h1>
+      <p class="background__descr">Плайя Де Лас Америкас</p>
+      <a class="background__button open-popup" href="#">все фото</a>
+   </div>
+</section>
+      <div class="popup-bg">
+   <div class="swiper popup-swiper">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper">
+         <!-- Slides -->
+         <li class="swiper-slide"><img src="./img/hotel-gallery(1).jpg" alt="Hotel gallery"></li>
+         <li class="swiper-slide"><img src="./img/hotel-gallery(2).jpg" alt="Hotel gallery"></li>
+         <li class="swiper-slide"><img src="./img/hotel-gallery(3).jpg" alt="Hotel gallery"></li>
+         <li class="swiper-slide"><img src="./img/hotel-gallery(4).jpg" alt="Hotel gallery"></li>
+         <li class="swiper-slide"><img src="./img/hotel-gallery(5).jpg" alt="Hotel gallery"></li>
+         <li class="swiper-slide"><img src="./img/hotel-gallery(6).jpg" alt="Hotel gallery"></li>
+         <li class="swiper-slide"><img src="./img/hotel-gallery(7).jpg" alt="Hotel gallery"></li>
+         <li class="swiper-slide"><img src="./img/hotel-gallery(8).jpg" alt="Hotel gallery"></li>
+         <li class="swiper-slide"><img src="./img/hotel-gallery(9).jpg" alt="Hotel gallery"></li>
+         <li class="swiper-slide"><img src="./img/hotel-gallery(10).jpg" alt="Hotel gallery"></li>
+      </ul>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+   </div>
+</div>
+      <div class="hotel-wrapper">
+   <section class="breadcrumbs">
+   <ul class="breadcrumbs__list">
+      <li><a class="breadcrumbs__item" href="https://joinup.ua/">Главная страница</a></li>
+      <li><a class="breadcrumbs__item" href="https://joinup.ua/resorts/plajya-de-las-amerikas/">Плайя Де Лас
+            Америкас</a></li>
+      <li><span class="breadcrumbs__item current">Columbus Apart-Hotel Apts</span></li>
+   </ul>
+</section>
+   <section class="prop">
+   <p class="prop__title">в этом отеле</p>
+   <i class="fas fa-chevron-right"></i>
+   <ul class="prop__list">
+      <li><img class="prop__item" src="./img/deck-chair.png" alt="deck-chair"></li>
+      <li><img class="prop__item" src="./img/shopping.png" alt="shopping"></li>
+      <li><img class="prop__item" src="./img/infinite.png" alt="infinite"></li>
+      <li><img class="prop__item" src="./img/family.png" alt="family"></li>
+      <li><img class="prop__item" src="./img/diving.png" alt="diving"></li>
+      <li><img class="prop__item" src="./img/column.png" alt="column"></li>
+      <li><img class="prop__item" src="./img/bar.png" alt="bar"></li>
+   </ul>
+</section>
+   <section class="slider-gallery">
+   <!-- Slider main container -->
+   <div class="swiper swiper-gallery">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper">
+         <!-- Slides -->
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(1).jpg"
+                  alt="Hotel gallery"></a></li>
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(2).jpg"
+                  alt="Hotel gallery"></a></li>
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(3).jpg"
+                  alt="Hotel gallery"></a></li>
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(4).jpg"
+                  alt="Hotel gallery"></a></li>
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(5).jpg"
+                  alt="Hotel gallery"></a></li>
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(6).jpg"
+                  alt="Hotel gallery"></a></li>
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(7).jpg"
+                  alt="Hotel gallery"></a></li>
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(8).jpg"
+                  alt="Hotel gallery"></a></li>
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(9).jpg"
+                  alt="Hotel gallery"></a></li>
+         <li class="swiper-slide"><a href="#" class="open-popup"><img src="./img/hotel-gallery(10).jpg"
+                  alt="Hotel gallery"></a></li>
+      </ul>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+   </div>
+</section>
+   <div class="hotel-container">
+      <div class="hotel-container__descr">
+         <section class="info">
+
+   <div class="info__header">
+      <div class="info__header-left">
+         <div class="info__header-name-wrapper">
+            <h2 class="info__header-name">Columbus Apart-Hotel Apts</h2>
+            <span class="info__header-rate">3 keys</span>
+         </div>
+         <p class="info__header-group">Входит в группу отелей: Voyaj Club Group</p>
+         <a class="info__header-location" href="https://joinup.ua/resorts/plajya-de-las-amerikas/"
+            target="_blank">Испания, Плайя де
+            лас Америкас</a>
+      </div>
+      <div class="info__header-right">
+         <img class="info__header-trip-rate" src="./img/trip-rate.png" alt="Tripadvisor-rate">
+         <p class="info__header-trip-comments">12,233 отзывов</p>
+         <a href="https://tophotels.ru/icache/user_photos/342/305208_1600x1200.jpg" target="_blank"
+            class="info__header-map">Карта отеля</a>
+      </div>
+   </div>
+   <div class="info__about">
+      <p class="info__about-text">Первоклассный апарт-отель Marina View Fort Beach находится в городе Свети-Влас. К
+         услугам гостей апартаменты с кондиционерами и бесплатным WiFi, а также 10 бесплатных открытых бассейнов.
+         Некоторые бассейны оснащены искусственными волнами. Предоставляется бесплатная частная парковка. Пляж
+         находится
+         в 100 метрах от апарт-отеля Marina View Fort Beach.
+
+         Все номера располагают кондиционером, балконом, гостиной зоной с диваном, телевизором с кабельными каналами,
+         оборудованной мини-кухней, обеденным столом, а также ванной комнатой с душем.
+
+         За дополнительную плату можно посетить оздоровительный спа-центр, фитнес-центр, массажный кабинет и
+         теннисный
+         корт. К вашим услугам такие развлекательные и спортивные сооружения, как поле для мини-футбола, бар, 3
+         ресторана. На территории апарт-отеля работают различные магазины, библиотека и салон красоты. Для юных
+         гостей
+         обустроена детская игровая площадка.</p>
+      <ul class="info__about-list">
+         <li class="info__about-item">
+            <span class="info__about-item-unit">Год строительства:</span>
+            <span>2005</span>
+         </li>
+         <li class="info__about-item">
+            <span class="info__about-item-unit">Реставрация:</span>
+            <span>2016</span>
+         </li>
+         <li class="info__about-item">
+            <span class="info__about-item-unit">Общая площадь:</span>
+            <span>405 500 кв.м</span>
+         </li>
+         <li class="info__about-item">
+            <span class="info__about-item-unit">Размер острова:</span>
+            <span>6800 х 730 м</span>
+         </li>
+         <li class="info__about-item">
+            <span class="info__about-item-unit">Кол-во номеров:</span>
+            <span>67</span>
+         </li>
+         <li class="info__about-item">
+            <span class="info__about-item-unit">Кол-во мест:</span>
+            <span>204</span>
+         </li>
+         <li class="info__about-item">
+            <span class="info__about-item-unit">Кол-во корпусов:</span>
+            <span>2</span>
+         </li>
+         <li class="info__about-item">
+            <span class="info__about-item-unit">Check-in:</span>
+            <span>15:00</span>
+         </li>
+         <li class="info__about-item">
+            <span class="info__about-item-unit">Check-out:</span>
+            <span>12:00</span>
+         </li>
+
+      </ul>
+   </div>
+   <div class="info__awards">
+      <img src="./img/trip-award.jpg" alt="Tripadvisor award">
+      <img src="./img/luxury-award.jpg" alt="Luxury award">
+   </div>
+
+
+</section>
+         <section class="video">
+   <iframe src="https://www.youtube.com/embed/zV2y4UN_hrw" title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+</section>
+         <section class="location">
+   <h3 class="location__title title">Расположение</h3>
+   <div class="location__text">
+      <p>Апарт-отель Reverie удобно расположен в деревне Фиростефани, всего в десяти минутах
+         ходьбы от Фиры, недалеко от центра, откуда легко добраться пешком до любой точки города. Он находится не на
+         краю кальдеры, а прямо над ней.</p>
+
+      <p>Обеспечен беспрепятственный доступ к зданию с улицы (нет лестницы), что очень удобно в случае, если вы
+         хотите
+         взять напрокат автомобиль/мотоцикл или подъехать к отелю на машине, такси или автобусе. Автобусная остановка
+         находится всего в 50 метрах от здания отеля. Постояльцы также могут воспользоваться бесплатной автостоянкой,
+         расположенной неподалеку.</p>
+
+      <p>Выход здания отеля на традиционную пешеходную дорожку— это безусловное преимущество! Эта пешеходная зона
+         проходит вдоль кальдеры и ведет к городу Фира (или же к городам Имеровигли и Ия). С нее открывается
+         захватывающий вид на
+         море, вулкан и отвесную скалу.</p>
+   </div>
+   <div class="map">
+      <iframe class="map__frame"
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.6415534493512!2d34.39733241008134!3d27.96045570130089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145349a2a2bb9efd%3A0x90c2f2c350f740b5!2sThe%20Royal%20Savoy%20Villas!5e0!3m2!1sru!2sua!4v1642776868550!5m2!1sru!2sua"
+         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+   </div>
+
+</section>
+         <section class="benefits">
+   <h3 class="benefits__title title">Преимущества</h3>
+   <ul class="benefits__list">
+      <li class="benefits__list-item">
+         <img src="./img/child-club.png" alt="Child club">
+         <span>Детский клуб</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/villa.png" alt="Villas">
+         <span>Отдельно стоящие виллы</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/beach-transfer.png" alt="Beach transfer">
+         <span>Бесплатный трансфер на пляж</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/food.png" alt="Food">
+         <span>Разнообразие блюд</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/parking.png" alt="Parking">
+         <span>Бесплатная парковка</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/beach.png" alt="Best beach">
+         <span>Лучший пляж</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/wifi.png" alt="Free wi-fi">
+         <span>Бесплатный wi-fi</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/aeroport.png" alt="Close aeroport">
+         <span>Близко к аэропорту</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/snorkling.png" alt="Place for diving">
+         <span>Отель для дайвинга</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/coral.png" alt="Corals">
+         <span>Коралловый риф</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/just-married.png" alt="Just married">
+         <span>Бонусы для молодожёнов</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/transfer.png" alt="Transfer">
+         <span>Бесплатный трансфер</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/spa.png" alt="Spa">
+         <span>Бесплатный вход в Спа центр</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/aquapark.png" alt="Aquapark">
+         <span>Бесплатный вход в Аквапарк</span>
+      </li>
+      <li class="benefits__list-item">
+         <img src="./img/ski-bus.png" alt="Ski-bus">
+         <span>Бесплатный <br />Ski bus</span>
+      </li>
+   </ul>
+</section>
+         <section class="slider-rooms">
+   <h3 class="slider-rooms__title title">Типы номеров</h3>
+
+
+   <!-- Slider main container -->
+   <div class="swiper swiper-rooms">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper">
+         <!-- Slides -->
+         <li class="swiper-slide">
+            <img class="slider-room__image" src="./img/standard-sea.jpg" alt="Standard Room with Sea View">
+            <h4 class="slider-room__title title">Standard Room with Sea View</h4>
+            <ul class="slider-room__info">
+               <li>Площадь номера: 44 кв.м</li>
+               <li>Кол-во номеров: 34</li>
+               <li>Кол-во комнат в номере: 2</li>
+               <li>Макс. взрослых гостей в номере: 4</li>
+               <li>Макс. кол-во гостей с детьми: 1</li>
+            </ul>
+            <ul class="slider-room__amenities">
+               <li>терраса</li>
+               <li>кондиционер: бесплатно</li>
+               <li>Wi-Fi бесплатно</li>
+               <li>ванна</li>
+               <li>душ</li>
+               <li>джакузи: на террасе</li>
+               <li>косметичское зеркало</li>
+               <li>TV: есть украинские каналы</li>
+
+            </ul>
+         </li>
+         <li class="swiper-slide">
+            <img class="slider-room__image" src="./img/standard-garden.jpg" alt="Standard Room with Sea View">
+            <h4 class="slider-room__title title">Standard Room with Garden View</h4>
+            <ul class="slider-room__info">
+               <li>Площадь номера: 50 кв.м</li>
+               <li>Кол-во номеров: 24</li>
+               <li>Кол-во комнат в номере: 2</li>
+               <li>Макс. взрослых гостей в номере: 4</li>
+               <li>Макс. кол-во гостей с детьми: 1</li>
+            </ul>
+            <ul class="slider-room__amenities">
+               <li>терраса</li>
+               <li>кондиционер: бесплатно</li>
+               <li>Wi-Fi бесплатно</li>
+               <li>ванна</li>
+               <li>душ</li>
+               <li>джакузи: на террасе</li>
+               <li>косметичское зеркало</li>
+               <li>TV: есть украинские каналы</li>
+            </ul>
+         </li>
+         <li class="swiper-slide">
+            <img class="slider-room__image" src="./img/deluxe-sea.jpg" alt="Deluxe Room with Sea View">
+            <h4 class="slider-room__title title">Deluxe Room with Sea View</h4>
+            <ul class="slider-room__info">
+               <li>Площадь номера: 52 кв.м</li>
+               <li>Кол-во номеров: 20</li>
+               <li>Кол-во комнат в номере: 2</li>
+               <li>Макс. взрослых гостей в номере: 4</li>
+               <li>Макс. кол-во гостей с детьми: 1</li>
+            </ul>
+            <ul class="slider-room__amenities">
+               <li>терраса</li>
+               <li>кондиционер: бесплатно</li>
+               <li>Wi-Fi бесплатно</li>
+               <li>ванна</li>
+               <li>душ</li>
+               <li>полотенца</li>
+               <li>тапочки</li>
+               <li>джакузи: на террасе</li>
+               <li>косметичское зеркало</li>
+               <li>TV: есть украинские каналы</li>
+            </ul>
+         </li>
+         <li class="swiper-slide">
+            <img class="slider-room__image" src="./img/deluxe-garden.jpg" alt="Deluxe Room with Garden View">
+            <h4 class="slider-room__title title">Deluxe Room with Garden View</h4>
+            <ul class="slider-room__info">
+               <li>Площадь номера: 52 кв.м</li>
+               <li>Кол-во номеров: 20</li>
+               <li>Кол-во комнат в номере: 2</li>
+               <li>Макс. взрослых гостей в номере: 4</li>
+               <li>Макс. кол-во гостей с детьми: 1</li>
+            </ul>
+            <ul class="slider-room__amenities">
+               <li>терраса</li>
+               <li>кондиционер: бесплатно</li>
+               <li>Wi-Fi бесплатно</li>
+               <li>ванна</li>
+               <li>душ</li>
+               <li>полотенца</li>
+               <li>тапочки</li>
+               <li>джакузи: на террасе</li>
+               <li>косметичское зеркало</li>
+               <li>TV: есть украинские каналы</li>
+            </ul>
+         </li>
+         <li class="swiper-slide">
+            <img class="slider-room__image" src="./img/superior-sea.jpg" alt="Superior Room with Sea View">
+            <h4 class="slider-room__title title">Superior Room with Sea View</h4>
+            <ul class="slider-room__info">
+               <li>Площадь номера: 68 кв.м</li>
+               <li>Кол-во номеров: 15</li>
+               <li>Кол-во комнат в номере: 3</li>
+               <li>Макс. взрослых гостей в номере: 5</li>
+               <li>Макс. кол-во гостей с детьми: 3</li>
+            </ul>
+            <ul class="slider-room__amenities">
+               <li>терраса</li>
+               <li>кондиционер: бесплатно</li>
+               <li>Wi-Fi бесплатно</li>
+               <li>гостинная зона</li>
+               <li>кухня</li>
+               <li>ванна</li>
+               <li>душ</li>
+               <li>полотенца</li>
+               <li>тапочки</li>
+               <li>джакузи: на террасе</li>
+               <li>косметичское зеркало</li>
+               <li>TV: есть украинские каналы</li>
+            </ul>
+         </li>
+         <li class="swiper-slide">
+            <img class="slider-room__image" src="./img/superior-garden.jpg" alt="Superior Room with Garden View">
+            <h4 class="slider-room__title title">Superior Room with Garden View</h4>
+            <ul class="slider-room__info">
+               <li>Площадь номера: 68 кв.м</li>
+               <li>Кол-во номеров: 15</li>
+               <li>Кол-во комнат в номере: 3</li>
+               <li>Макс. взрослых гостей в номере: 5</li>
+               <li>Макс. кол-во гостей с детьми: 3</li>
+            </ul>
+            <ul class="slider-room__amenities">
+               <li>терраса</li>
+               <li>кондиционер: бесплатно</li>
+               <li>Wi-Fi бесплатно</li>
+               <li>гостинная зона</li>
+               <li>кухня</li>
+               <li>ванна</li>
+               <li>душ</li>
+               <li>полотенца</li>
+               <li>тапочки</li>
+               <li>джакузи: на террасе</li>
+               <li>косметичское зеркало</li>
+               <li>TV: есть украинские каналы</li>
+            </ul>
+         </li>
+      </ul>
+
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+   </div>
+</section>
+         <section class="amenities">
+   <h3 class="amenities__title title">Инфраструктура и услуги</h3>
+   <div class="amenities__nav">
+      <div class="amenities__nav__tabs">
+         <a href="#amenities-beach" data-tab="1" class="amenities__nav__tab tab-active">Пляж</a>
+         <a href="#amenities-pool" data-tab="2" class="amenities__nav__tab">Бассейны</a>
+         <a href="#amenities-activities" data-tab="3" class="amenities__nav__tab">Развлечения и спорт</a>
+         <a href="#amenities-food" data-tab="4" class="amenities__nav__tab">Питание</a>
+         <a href="#amenities-service" data-tab="5" class="amenities__nav__tab">Услуги отеля</a>
+      </div>
+      <div class="amenities__nav__tab-content">
+         <ul id="amenities-beach" data-tab-content="1" class="amenities__nav__tab-pane tab-active">
+            <li>песчаный пляж</li>
+            <li>зонтики: бесплатно</li>
+            <li>шезлонги: бесплатно</li>
+            <li>полотенца: бесплатно</li>
+            <li>бар на пляже</li>
+            <li>частный пляж</li>
+            <li>пирс</li>
+         </ul>
+         <ul id="amenities-pool" data-tab-content="2" class="amenities__nav__tab-pane">
+            <li>открытый бассейн: бесплатно с подогревом</li>
+            <li>зонтики: бесплатно</li>
+            <li>шезлонги: бесплатно</li>
+            <li>полотенца: бесплатно</li>
+            <li>бар у бассейна</li>
+            <li>детский бассейн</li>
+         </ul>
+         <ul id="amenities-activities" data-tab-content="3" class="amenities__nav__tab-pane">
+            <li>настольный теннис</li>
+            <li>теннисный корт</li>
+            <li>волейбольная площадка</li>
+            <li>баскетбольная площадка</li>
+            <li>бильярд: платно</li>
+            <li>верховая езда: платно</li>
+            <li>тренажёрный зал</li>
+            <li>дайвинг</li>
+         </ul>
+         <ul id="amenities-food" data-tab-content="4" class="amenities__nav__tab-pane">
+            <li>ресторан</li>
+            <li>снэк-бар</li>
+            <li>бар на пляже</li>
+            <li>бар у бассейна</li>
+            <li>детское меню</li>
+         </ul>
+         <ul id="amenities-service" data-tab-content="5" class="amenities__nav__tab-pane">
+            <li>оплата по кредитным картам</li>
+            <li>парковка: бесплатно</li>
+            <li>wi-fi: бесплатно</li>
+            <li>комната для хранения багажа</li>
+            <li>экскурсионные программы</li>
+            <li>факс / ксерокс / принтер</li>
+            <li>услуги по глаженью одежды</li>
+            <li>сувенирный магазин</li>
+            <li>прачечная: платно</li>
+            <li>обмен валюты</li>
+            <li>магазины</li>
+            <li>банкомат</li>
+            <li>консьерж</li>
+            <li>анимация</li>
+         </ul>
+      </div>
+   </div>
+
+</section>
+      </div>
+      <div class="hotel-container__booking">
+         <div class="hotel-booking">
+   <div class="hotel-booking__btn-wrapper"><span class="hotel-booking__btn"><i class="fas fa-chevron-up"></i></span>
+   </div>
+   <h3 class="hotel-booking__title title">Хочешь в этот отель?</h3>
+   <form action="#" class="hotel-booking__form">
+      <div class="select-wrapper">
+         <label for="input-date">Начало тура</label>
+         <input type="date" id="input-date">
+      </div>
+      <div class="select-wrapper">
+         <label for="select-days">Ночей</label>
+         <select id="select-days">
+            <option>3</option>
+            <option>5</option>
+            <option>7</option>
+            <option selected>10</option>
+         </select>
+      </div>
+      <div class="select-wrapper">
+         <label for="select-adults">Взрослых</label>
+         <select id="select-adults">
+            <option>1</option>
+            <option selected>2</option>
+            <option>3</option>
+            <option>4</option>
+         </select>
+      </div>
+      <div class="select-wrapper">
+         <label for="select-children">Детей</label>
+         <select id="select-children">
+            <option selected>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+         </select>
+      </div>
+      <div class="select-wrapper big">
+         <label for="select-service">Обслуживание</label>
+         <select id="select-service">
+            <option selected>AI - все включено</option>
+            <option>UAI - ультра все включено</option>
+         </select>
+      </div>
+      <div class="select-wrapper big">
+         <label for="select-room">Тип номера</label>
+         <select id="select-room">
+            <option selected>Standard Room</option>
+            <option>Deluxe Room</option>
+            <option>Superior Room</option>
+         </select>
+      </div>
+      <p class="hotel-booking__total">итого:<span> 34000 UAH</span></p>
+      <div class="hotel-booking__buttons-wrapper">
+         <button type="submit" class="hotel-booking__btn">Заказать</button>
+         <a class="hotel-booking__var" href="#">Все варианты</a>
+      </div>
+      <p class="hotel-booking__contact">Менеджер свяжеться с Вами и предоставит всю необходимую информацию</p>
+   </form>
+</div>
+      </div>
+   </div>
+</div>
+<section class="comments">
+   <div class="comments-wrapper">
+      <h3 class="comments__title title"><a
+            href="https://www.tripadvisor.ru/Hotel_Review-g562820-d288348-Reviews-Kn_Columbus_Aparthotel-Playa_de_las_Americas_Arona_Tenerife_Canary_Islands.html"
+            target="_blank">Отзывы
+            TripAdvisor</a></h3>
+      <ul class="comments__list">
+         <li>
+            <div class="comments-header">
+               <span class="comments-header-author">Екатерина <span class="comments-header-date">19 Октября
+                     2021</span></span>
+
+               <img class="comments-header-rate" src="./img/trip-rate.png" alt="Trip rate">
+            </div>
+            <p class="comments-content">Выбрали этот отель для свадебного путешествия, отдыхали с 4 по 18 сентября 2021.
+               Прочитала довольно много не лучших отзывов об отеле, очень переживала перед заселением. Но все оказалось
+               зря
+               - место просто чудесное!</p>
+         </li>
+         <li>
+            <div class="comments-header">
+               <span class="comments-header-author">goncina <span class="comments-header-date">24 Сентября
+                     2021</span></span>
+
+               <img class="comments-header-rate" src="./img/trip-rate.png" alt="Trip rate">
+            </div>
+            <p class="comments-content">Отдыхали с мужем первый раз в этом отеле. Очень остались довольны. Зеленая
+               территория ухоженная, персонал вежлив и очень улыбчивый.Сервис быстрый. Обязательно возьмите с собой
+               сетевой
+               переходник северо-американского типа, так как в номерах все розетки на 110Вв.</p>
+         </li>
+      </ul>
+   </div>
+
+</section>
+      <footer class="footer">
+   <div class="footer__box footer__info">
+      <img class="footer__info-logo" src="./img/joinup-logo.png" alt="Logo">
+      <a class="footer__info-location"
+         href="https://www.google.com.ua/maps/place/SkyUp+Airlines/@50.4040546,30.6835947,17.2z/data=!4m5!3m4!1s0x40d4c58b27ec1b49:0x8b1c3f0eec81d61c!8m2!3d50.4037108!4d30.6822302?hl=ru">Киев
+         <br />Харьковское шоссе 201/203, оф. 2а</a>
+      <span class="footer__info-schedule">Пн - Сб 9:00 - 19:00</span>
+      <a class="footer__info-tel" href="tel:0443039999">044 303 99 99</a>
+      <ul class="footer__info-socials">
+         <li><i class="fab fa-facebook-square"></i></li>
+         <li><i class="fab fa-youtube-square"></i></li>
+         <li><i class="fab fa-instagram-square"></i></li>
+      </ul>
+   </div>
+   <div class="footer__box">
+      <h4 class="footer__box-title">развитие и обучение</h4>
+      <ul class="footer__box-list">
+         <li><a class="footer__box-link" href="https://franchise.joinup.travel/" target="_blank">Франчайзинг</a></li>
+         <li><a class="footer__box-link" href="https://joinup.ua/study/vebinary/" target="_blank">Фестивали
+               вебинаров</a></li>
+         <li><a class="footer__box-link" href="https://joinup.ua/faq/" target="_blank">Справочник</a></li>
+      </ul>
+   </div>
+   <div class="footer__box">
+      <h4 class="footer__box-title">пресс-центр</h4>
+      <ul class="footer__box-list">
+         <li><a class="footer__box-link" href="https://joinup.ua/tax_press/novosti/" target="_blank">Новости</a></li>
+         <li><a class="footer__box-link" href="https://joinup.ua/o-nas-pishut/" target="_blank">О нас пишут</a></li>
+         <li><a class="footer__box-link" href="https://joinup.ua/pr/" target="_blank">Пресс-служба</a></li>
+      </ul>
+   </div>
+   <div class="footer__box">
+      <h4 class="footer__box-title">бронирование</h4>
+      <ul class="footer__box-list">
+         <li><a class="footer__box-link" href="https://joinup.ua/hot-tours/" target="_blank">Горящие туры</a></li>
+         <li><a class="footer__box-link" href="https://joinup.ua/tax_press/koronavirus/" target="_blank">Мы
+               рекомендуем</a></li>
+         <li><a class="footer__box-link" href="https://joinup.ua/poisk-tura-full/" target="_blank">Поиск тура</a></li>
+         <li><a class="footer__box-link"
+               href="https://joinup.ua/news/bot-v-pomoshh-teper-otslezhivat-informatsiyu-zayavkam-eshhe-udobnee/"
+               target="_blank">Где купить</a></li>
+         <li><a class="footer__box-link" href="https://joinup.ua/rules-uslovia/?section=strakhovanie"
+               target="_blank">Страхование</a></li>
+      </ul>
+   </div>
+   <div class="footer__box">
+      <h4 class="footer__box-title">о компании</h4>
+      <ul class="footer__box-list">
+         <li><a class="footer__box-link" href="https://joinup.ua/ustavnye-dokumenty/" target="_blank">Уставные
+               документы</a></li>
+         <li><a class="footer__box-link" href="https://joinup.ua/vacancy/" target="_blank">Вакансии</a></li>
+      </ul>
+   </div>
+</footer>
+      <section class="copyright">
+   <p class="copyright__text">Copyright © Join UP! Все права защищены</p>
+</section>
+   </div>
+   <script src="https://kit.fontawesome.com/d4e51cbf52.js" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
+   <!-- <script src="js/script.min.js"></script> -->
+
+
+</body>
+
+
+</html>
